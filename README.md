@@ -9,29 +9,53 @@ This project is built using Java, Spring Boot, Spring JDBC (JdbcTemplate), and M
 🚀 Features
 
 Create a workout
+
 Get all workouts
+
 Get workout by ID
+
 Update a workout
+
 Delete a workout
+
 Add exercises to workouts
+
 View exercises for a workout
+
 Filter workouts by workout type
+
 Filter workouts by date
+
 Input validation
+
 Exception handling
+
 Transaction management
+
 MySQL database integration
+
 RESTful API architecture
+
 🛠️ Technologies
+
 Java 17
+
 Spring Boot
+
 Spring Web
+
 Spring JDBC
+
 JdbcTemplate
+
 MySQL
+
 Maven
+
 Jakarta Validation
+
 🏗️ Architecture
+
 Client
   |
   v
