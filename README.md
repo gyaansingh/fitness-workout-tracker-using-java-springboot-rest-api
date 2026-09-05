@@ -1,10 +1,13 @@
 Fitness Workout Tracker API
 
+
 A RESTful backend application for tracking fitness workouts and exercises.
 
 This project is built using Java, Spring Boot, Spring JDBC (JdbcTemplate), and MySQL. It does not use JPA or Hibernate.
 
+
 🚀 Features
+
 Create a workout
 Get all workouts
 Get workout by ID
@@ -67,41 +70,7 @@ dto/
 exception/
     Handles application exceptions
 
-📁 Project Structure
-fitness-workout-tracker/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/fitness/
-│   │   │   ├── controller/
-│   │   │   │   └── WorkoutController.java
-│   │   │   │
-│   │   │   ├── dto/
-│   │   │   │   └── WorkoutRequest.java
-│   │   │   │
-│   │   │   ├── exception/
-│   │   │   │   ├── GlobalExceptionHandler.java
-│   │   │   │   └── ResourceNotFoundException.java
-│   │   │   │
-│   │   │   ├── model/
-│   │   │   │   ├── Workout.java
-│   │   │   │   └── Exercise.java
-│   │   │   │
-│   │   │   ├── repository/
-│   │   │   │   └── WorkoutRepository.java
-│   │   │   │
-│   │   │   ├── service/
-│   │   │   │   └── WorkoutService.java
-│   │   │   │
-│   │   │   └── FitnessApplication.java
-│   │   │
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── schema.sql
-│   │
-├── pom.xml
-├── .gitignore
-└── README.md
+
 
 🗄️ Database
 
@@ -134,9 +103,12 @@ weight_kg
 
 workout_id creates a relationship between an exercise and its workout.
 
+
+
 ⚙️ Configuration
 
 Configure your MySQL connection in application.properties.
+
 
 For example:
 
@@ -157,7 +129,6 @@ DB_USERNAME=root
 DB_PASSWORD=your_password
 
 
-Do not commit your real database password to GitHub.
 
 ▶️ How to Run
 1. Clone the repository
@@ -381,6 +352,8 @@ Example response:
   "durationMinutes": "Duration must be greater than 0"
 }
 
+
+
 ❌ Error Handling
 
 The application provides centralized exception handling using @RestControllerAdvice.
@@ -444,12 +417,12 @@ Create Exercise 3
 
 If one operation fails, the transaction can be rolled back.
 
+
+
 🚀 Future Improvements
 
 Possible future features:
 
-User registration and login
-JWT authentication
 User-specific workouts
 Exercise management API
 Workout statistics
